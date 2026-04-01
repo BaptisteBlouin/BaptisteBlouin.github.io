@@ -66,6 +66,9 @@ const translations = {
         "skills.e1": "Architecture Multi-tenant",
 
         "exp.title": "Exp\u00e9rience",
+        "exp.present": "Pr\u00e9sent",
+        "exp.j0t": "Fondateur \u2014 Plateforme Data & IA SaaS",
+        "exp.j0d1": "Conception et d\u00e9veloppement d'une plateforme SaaS d'analyse de donn\u00e9es (FastAPI, React, PostgreSQL, LLM, RAG)",
         "exp.j1t": "Ing\u00e9nieur ML",
         "exp.j1o": "Projet ENP-China",
         "exp.j1d1": "Chercheur principal et d\u00e9veloppeur pour la plateforme HistText, gestion de projet ind\u00e9pendante",
@@ -185,6 +188,9 @@ const translations = {
         "skills.e1": "Multi-tenant Architecture",
 
         "exp.title": "Experience",
+        "exp.present": "Present",
+        "exp.j0t": "Founder \u2014 Data & AI SaaS Platform",
+        "exp.j0d1": "Design and development of a data analysis SaaS platform (FastAPI, React, PostgreSQL, LLM, RAG)",
         "exp.j1t": "ML Engineer",
         "exp.j1o": "ENP-China Project",
         "exp.j1d1": "Lead researcher and developer for the HistText platform, independent project management",
