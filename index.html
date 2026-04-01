@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baptiste Blouin — Data Scientist & AI Engineer</title>
+    <meta name="description" content="Baptiste Blouin - Data Scientist & AI Engineer | NLP Specialist | PhD in Computer Science">
+    <meta name="author" content="Baptiste Blouin">
+    <meta property="og:title" content="Baptiste Blouin — Data Scientist & AI Engineer">
+    <meta property="og:description" content="PhD in Computer Science, specializing in NLP, ML, and large-scale text analysis.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">B<span class="accent">.</span>B</a>
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav.about">A propos</a>
+                <a href="#skills" data-i18n="nav.skills">Comp&eacute;tences</a>
+                <a href="#experience" data-i18n="nav.experience">Exp&eacute;rience</a>
+                <a href="#projects" data-i18n="nav.projects">Projets</a>
+                <a href="#publications" data-i18n="nav.publications">Publications</a>
+                <a href="#education" data-i18n="nav.education">Formation</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="btn-lang" id="lang-toggle">EN</button>
+                <button class="btn-icon nav-menu-toggle" id="nav-menu-toggle" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge" data-i18n="hero.badge">Disponible pour de nouvelles opportunit&eacute;s</div>
+            <h1 class="hero-title">
+                <span class="hero-greeting" data-i18n="hero.greeting">Bonjour, je suis</span>
+                <span class="hero-name">Baptiste Blouin</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typed-text"></span><span class="typed-cursor">|</span>
+            </p>
+            <p class="hero-description" data-i18n="hero.description">
+                Data Scientist et Ing&eacute;nieur IA avec un Doctorat en Informatique, sp&eacute;cialis&eacute; en NLP
+                et analyse de textes &agrave; grande &eacute;chelle.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Me contacter</a>
+                <a href="#projects" class="btn btn-outline" data-i18n="hero.projects">Voir mes projets</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="hero.stat1">Publications</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="hero.stat2">Ann&eacute;es d'exp&eacute;rience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label" data-i18n="hero.stat3">Pays (ateliers)</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+        </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">A propos</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about.p1">
+                        Data Scientist et Ing&eacute;nieur IA avec un Doctorat en Informatique, je combine une expertise
+                        approfondie en recherche avec des comp&eacute;tences pratiques en impl&eacute;mentation ML.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Ma capacit&eacute; d&eacute;montr&eacute;e &agrave; explorer des probl&egrave;mes complexes, concevoir des solutions
+                        innovantes et communiquer des r&eacute;sultats techniques &agrave; des audiences diverses est au c&oelig;ur
+                        de mon approche professionnelle.
+                    </p>
+                    <p data-i18n="about.p3">
+                        J'ai une solide exp&eacute;rience en recherche ind&eacute;pendante, r&eacute;solution collaborative de
+                        probl&egrave;mes et transfert de connaissances par publications et pr&eacute;sentations internationales.
+                        Mon exp&eacute;rience dans la transformation de questions de recherche en solutions IA pour le
+                        traitement de donn&eacute;es &agrave; grande &eacute;chelle me permet d'apporter une r&eacute;elle valeur ajout&eacute;e.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Aix-en-Provence, France</span>
+                        </div>
+                        <div class="detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            <span data-i18n="about.languages">Fran&ccedil;ais, Anglais</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <h3 data-i18n="about.h1">Recherche</h3>
+                        <p data-i18n="about.h1d">Investigation ind&eacute;pendante, conception exp&eacute;rimentale, publication acad&eacute;mique</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3 data-i18n="about.h2">Ing&eacute;nierie</h3>
+                        <p data-i18n="about.h2d">Full-stack ML, architecture &eacute;volutive, d&eacute;ploiement production</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 data-i18n="about.h3">Collaboration</h3>
+                        <p data-i18n="about.h3d">Travail interculturel, mentorat, pr&eacute;sentations internationales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">Comp&eacute;tences</h2>
+            <div class="skills-grid">
+                <!-- Langages -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <h3 data-i18n="skills.programming">Langages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">JavaScript / TypeScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <!-- ML & Data Science -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <h3>ML & Data Science</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">FLAML / AutoML</span>
+                        <span class="skill-tag">Sentence Transformers</span>
+                        <span class="skill-tag">NetworkX</span>
+                        <span class="skill-tag">UMAP</span>
+                        <span class="skill-tag" data-i18n="skills.r7">Analyse Statistique</span>
+                    </div>
+                </div>
+                <!-- NLP & Traitement de Documents -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        <h3 data-i18n="skills.nlp">NLP & Traitement de Documents</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">spaCy</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag" data-i18n="skills.nlp3">NER Multilingue</span>
+                        <span class="skill-tag" data-i18n="skills.nlp5">Extraction d'&Eacute;v&eacute;nements</span>
+                        <span class="skill-tag">Transfer Learning</span>
+                        <span class="skill-tag" data-i18n="skills.nlp2">Adaptation de Domaine</span>
+                        <span class="skill-tag" data-i18n="skills.nlp7">Segmentation de Mots</span>
+                        <span class="skill-tag" data-i18n="skills.nlp6">Annotation de Donn&eacute;es</span>
+                        <span class="skill-tag">OCR (Docling, Google Cloud Vision)</span>
+                        <span class="skill-tag" data-i18n="skills.nlp1">Traitement de Textes Historiques</span>
+                    </div>
+                </div>
+                <!-- LLM & IA Generative -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <h3 data-i18n="skills.llm">LLM & IA G&eacute;n&eacute;rative</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">litellm</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Structured Output</span>
+                        <span class="skill-tag" data-i18n="skills.llm2">Routing Multi-provider &amp; Fallback</span>
+                        <span class="skill-tag">RAG / GraphRAG / RAPTOR</span>
+                        <span class="skill-tag" data-i18n="skills.llm3">Recherche Hybride (BM25 + Vector)</span>
+                        <span class="skill-tag">Reranking (Cross-Encoder)</span>
+                        <span class="skill-tag">Embeddings / Vector Search</span>
+                        <span class="skill-tag">VLM (Vision Language Models)</span>
+                        <span class="skill-tag">Text-to-SQL</span>
+                        <span class="skill-tag">Langfuse</span>
+                        <span class="skill-tag" data-i18n="skills.llm4">Suivi de Co&ucirc;ts LLM</span>
+                    </div>
+                </div>
+                <!-- Developpement Full-Stack -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        <h3 data-i18n="skills.dev">D&eacute;veloppement Full-Stack</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TailwindCSS</span>
+                        <span class="skill-tag">D3.js</span>
+                        <span class="skill-tag">Shiny</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">Pydantic</span>
+                        <span class="skill-tag">Async Python</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">Auth / RBAC</span>
+                        <span class="skill-tag">pytest / TDD</span>
+                        <span class="skill-tag">Playwright</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <!-- Infrastructure & DevOps -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        <h3>Infrastructure & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">pgvector</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">Apache Solr</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">Alembic</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">S3 / MinIO</span>
+                        <span class="skill-tag">Prometheus / Grafana</span>
+                        <span class="skill-tag">OpenTelemetry</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+                <!-- Recherche & Communication -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        <h3 data-i18n="skills.research">Recherche & Communication</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-i18n="skills.r6">M&eacute;thodologie Scientifique</span>
+                        <span class="skill-tag" data-i18n="skills.r3">Conception Exp&eacute;rimentale</span>
+                        <span class="skill-tag" data-i18n="skills.r4">R&eacute;daction Technique &amp; Publication</span>
+                        <span class="skill-tag" data-i18n="skills.r5">Pr&eacute;sentations Internationales</span>
+                        <span class="skill-tag" data-i18n="skills.r8">Revue de Litt&eacute;rature</span>
+                        <span class="skill-tag" data-i18n="skills.r9">Mentorat</span>
+                        <span class="skill-tag" data-i18n="skills.r10">Collaboration Interculturelle</span>
+                        <span class="skill-tag">LaTeX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-i18n="exp.title">Exp&eacute;rience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Scientist & <span data-i18n="exp.j1t">Ing&eacute;nieur ML</span></h3>
+                                <p class="timeline-org"><span data-i18n="exp.j1o">Projet ENP-China</span> &mdash; Aix-Marseille Universit&eacute;</p>
+                            </div>
+                            <span class="timeline-date">2023 &ndash; 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp.j1d1">Chercheur principal et d&eacute;veloppeur pour la plateforme HistText, gestion de projet ind&eacute;pendante</li>
+                            <li data-i18n="exp.j1d2">Exploration et r&eacute;solution de d&eacute;fis ML complexes dans le traitement de textes historiques &agrave; grande &eacute;chelle</li>
+                            <li data-i18n="exp.j1d3">Communication de concepts techniques par ateliers de formation dans 4 pays</li>
+                            <li data-i18n="exp.j1d4">Collaboration interdisciplinaire avec historiens, linguistes et informaticiens internationaux</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3><span data-i18n="exp.j2t">Doctorant & Scientifique ML</span></h3>
+                                <p class="timeline-org"><span data-i18n="exp.j2o">Laboratoire LIS / IrAsia</span> &mdash; Aix-Marseille Universit&eacute;</p>
+                            </div>
+                            <span class="timeline-date">2019 &ndash; 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp.j2d1">Recherche ind&eacute;pendante sur subvention ERC Avanc&eacute;e europ&eacute;enne, apprentissage auto-dirig&eacute;</li>
+                            <li data-i18n="exp.j2d2">Publi&eacute; 5+ articles &agrave; comit&eacute; de lecture, r&eacute;daction technique et communication</li>
+                            <li data-i18n="exp.j2d3">Pr&eacute;sent&eacute; la recherche dans des conf&eacute;rences internationales</li>
+                            <li data-i18n="exp.j2d4">Mentor&eacute; et collabor&eacute; avec &eacute;quipes de recherche internationales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-i18n="proj.title">Projets Cl&eacute;s</h2>
+            <div class="projects-grid">
+                <!-- Aubier (unnamed) - Current project -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <span class="project-date">2025 &ndash;</span>
+                    </div>
+                    <h3 data-i18n="proj.p6title">Plateforme Data &amp; IA SaaS</h3>
+                    <p class="project-subtitle" data-i18n="proj.p6sub">Projet Entrepreneurial &mdash; En d&eacute;veloppement</p>
+                    <p class="project-desc" data-i18n="proj.p6desc">Plateforme SaaS de transformation et d'analyse de donn&eacute;es combinant extraction IA, RAG avanc&eacute;, text-to-SQL, connecteurs multi-sources et tableaux de bord analytiques. Architecture multi-tenant avec pipeline de traitement.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>FastAPI</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Celery</span><span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-wip-badge" data-i18n="proj.wip">En cours</span>
+                    </div>
+                </div>
+
+                <!-- HistText -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <span class="project-date">2023 &ndash; 2025</span>
+                    </div>
+                    <h3>HistText</h3>
+                    <p class="project-subtitle" data-i18n="proj.p1sub">Plateforme d'Analyse de Textes &agrave; Grande &Eacute;chelle</p>
+                    <p class="project-desc" data-i18n="proj.p1desc">Plateforme full-stack traitant des milliards de tokens de documents historiques avec NER, recherche full-text, visualisations interactives et package R client. D&eacute;ploy&eacute;e pour la communaut&eacute; internationale.</p>
+                    <div class="project-tags">
+                        <span>Rust</span><span>React</span><span>Python</span><span>R</span><span>PostgreSQL</span><span>Apache Solr</span><span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://histtext.enpchina.eu/" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            <span data-i18n="proj.demo">D&eacute;mo live</span>
+                        </a>
+                        <a href="https://github.com/BaptisteBlouin/HistText" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <span class="project-badge">JDMDH 2024</span>
+                    </div>
+                </div>
+
+                <!-- EventExtractionPapers -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="project-date">2020 &ndash;</span>
+                    </div>
+                    <h3>EventExtractionPapers</h3>
+                    <p class="project-subtitle" data-i18n="proj.p7sub">Ressource communautaire Open Source</p>
+                    <p class="project-desc" data-i18n="proj.p7desc">Liste curated de ressources NLP sur l'extraction d'&eacute;v&eacute;nements. R&eacute;f&eacute;rence largement utilis&eacute;e dans la communaut&eacute; de recherche.</p>
+                    <div class="project-tags">
+                        <span>NLP</span><span>Event Extraction</span><span>Open Source</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/BaptisteBlouin/EventExtractionPapers" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <span class="project-badge">580+ stars</span>
+                    </div>
+                </div>
+
+                <!-- ENP-Corpus Creator -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <h3>ENP-Corpus Creator</h3>
+                    <p class="project-subtitle" data-i18n="proj.p8sub">Pipeline OCR & Annotation</p>
+                    <p class="project-desc" data-i18n="proj.p8desc">Suite d'outils transformant des images num&eacute;ris&eacute;es en corpus s&eacute;mantiquement enrichis : OCR (Google Vision), interface d'annotation web interactive, classification par raccourcis clavier. Con&ccedil;u pour documents multilingues complexes.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Google Vision API</span><span>Web</span><span>OCR</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://enepchina.hypotheses.org/5989" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            <span data-i18n="proj.article">Article</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NER Dataset -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        <span class="project-date">2023 &ndash; 2024</span>
+                    </div>
+                    <h3 data-i18n="proj.p2title">Dataset NER Chinois & Pipeline ML</h3>
+                    <p class="project-subtitle" data-i18n="proj.p2sub">Ing&eacute;nierie de Donn&eacute;es & ML</p>
+                    <p class="project-desc" data-i18n="proj.p2desc">Le plus grand dataset NER annot&eacute; de textes chinois historiques (1872&ndash;1949) avec contr&ocirc;le qualit&eacute; automatis&eacute;, pipeline ML et benchmarks reproductibles. Donn&eacute;es librement disponibles.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>PostgreSQL</span><span>Annotation</span><span>ML Pipeline</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-badge">LREC-COLING 2024</span>
+                    </div>
+                </div>
+
+                <!-- Tokenization -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <span class="project-date">2023</span>
+                    </div>
+                    <h3 data-i18n="proj.p3title">Mod&egrave;le de Langue & Tokenisation Chinoise</h3>
+                    <p class="project-subtitle" data-i18n="proj.p3sub">D&eacute;veloppement de Mod&egrave;les ML</p>
+                    <p class="project-desc" data-i18n="proj.p3desc">Mod&egrave;les de tokenisation atteignant 83% de pr&eacute;cision (+35% d'am&eacute;lioration) pour le chinois transitionnel, en collaboration avec Academia Sinica.</p>
+                    <div class="project-tags">
+                        <span>PyTorch</span><span>TensorFlow</span><span>Tokenisation</span><span>Fine-tuning</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-badge">NLP4DH 2023</span>
+                    </div>
+                </div>
+
+                <!-- OCR Simulation -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        <span class="project-date">2022</span>
+                    </div>
+                    <h3 data-i18n="proj.p4title">Simulation OCR & Robustesse ML</h3>
+                    <p class="project-subtitle" data-i18n="proj.p4sub">Recherche Exp&eacute;rimentale</p>
+                    <p class="project-desc" data-i18n="proj.p4desc">Approche d'augmentation de donn&eacute;es r&eacute;duisant l'impact d'erreur OCR de 50%, avec framework de benchmarking pour la robustesse des mod&egrave;les.</p>
+                    <div class="project-tags">
+                        <span>PyTorch</span><span>Transformers</span><span>Data Augmentation</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-badge">TALN 2022</span>
+                    </div>
+                </div>
+
+                <!-- Transfer Learning -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                        <span class="project-date">2021</span>
+                    </div>
+                    <h3 data-i18n="proj.p5title">Transfer Learning & Adaptation</h3>
+                    <p class="project-subtitle" data-i18n="proj.p5sub">D&eacute;veloppement & Optimisation ML</p>
+                    <p class="project-desc" data-i18n="proj.p5desc">Few-shot learning atteignant 93% de r&eacute;cup&eacute;ration de performance avec donn&eacute;es minimales, architectures character-aware pour textes historiques.</p>
+                    <div class="project-tags">
+                        <span>BERT</span><span>Transformers</span><span>Few-shot</span><span>Adaptation</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-badge">NLP4DH 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h4>HistText: An Application for Leveraging Large-Scale Historical Textbases</h4>
+                        <p class="pub-venue">JDMDH 2024 &mdash; Journal of Data Mining &amp; Digital Humanities</p>
+                        <p class="pub-links"><a href="https://jdmdh.episciences.org/12536" target="_blank" rel="noopener">Paper</a> &middot; <a href="https://shs.hal.science/halshs-04178820" target="_blank" rel="noopener">HAL</a></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h4>A Dataset for Named Entity Recognition and Entity Linking in Chinese Historical Newspapers</h4>
+                        <p class="pub-authors">B. Blouin, C. Armand, C. Henriot</p>
+                        <p class="pub-venue">LREC-COLING 2024, Torino, Italy</p>
+                        <p class="pub-links"><a href="https://aclanthology.org/2024.lrec-main.35/" target="_blank" rel="noopener">ACL Anthology</a></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-content">
+                        <h4>Unlocking Transitional Chinese: Word Segmentation in Modern Historical Texts</h4>
+                        <p class="pub-authors">B. Blouin, H.-H. Huang, C. Henriot, C. Armand</p>
+                        <p class="pub-venue">NLP4DH 2023, Tokyo, Japan</p>
+                        <p class="pub-links"><a href="https://aclanthology.org/2023.nlp4dh-1.11/" target="_blank" rel="noopener">ACL Anthology</a></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-year">2022</div>
+                    <div class="pub-content">
+                        <h4>Simulation d'erreurs d'OCR dans les syst&egrave;mes de TAL pour le traitement de donn&eacute;es anachroniques</h4>
+                        <p class="pub-authors">B. Blouin, B. Favre, J. Auguste</p>
+                        <p class="pub-venue">TALN 2022 (JEP-TALN-RECITAL), Avignon</p>
+                        <p class="pub-links"><a href="https://aclanthology.org/2022.jeptalnrecital-humanum.9/" target="_blank" rel="noopener">ACL Anthology</a></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-year">2021</div>
+                    <div class="pub-content">
+                        <h4>Transferring Modern Named Entity Recognition to the Historical Domain: How to Take the Step?</h4>
+                        <p class="pub-authors">B. Blouin, B. Favre, J. Auguste, C. Henriot</p>
+                        <p class="pub-venue">NLP4DH 2021, Silchar, India</p>
+                        <p class="pub-links"><a href="https://aclanthology.org/2021.nlp4dh-1.18/" target="_blank" rel="noopener">ACL Anthology</a></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-year">2021</div>
+                    <div class="pub-content">
+                        <h4>Creating Biographical Networks from Chinese and English Wikipedia</h4>
+                        <p class="pub-authors">B. Blouin, N. van den Bosch, P. Magistry</p>
+                        <p class="pub-venue">Journal of Historical Network Research, Vol. 5, No. 1</p>
+                        <p class="pub-links"><a href="https://jhnr.net/articles/10.25517/jhnr.v5i1.120" target="_blank" rel="noopener">JHNR</a> &middot; <a href="https://shs.hal.science/halshs-03217972" target="_blank" rel="noopener">HAL</a></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-content">
+                        <h4>Contextual Characters with Segmentation Representation for Named Entity Recognition in Chinese</h4>
+                        <p class="pub-authors">B. Blouin, P. Magistry</p>
+                        <p class="pub-venue">PACLIC 34, Hanoi, Vietnam</p>
+                        <p class="pub-links"><a href="https://aclanthology.org/2020.paclic-1.1/" target="_blank" rel="noopener">ACL Anthology</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2 class="section-title" data-i18n="edu.title">Formation</h2>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-year">2022</div>
+                    <div class="edu-content">
+                        <h3 data-i18n="edu.phd">Doctorat en Informatique (Machine Learning)</h3>
+                        <p class="edu-org">Aix-Marseille Universit&eacute;</p>
+                        <p class="edu-thesis" data-i18n="edu.thesis">Th&egrave;se : Extraction d'&eacute;v&eacute;nements &agrave; partir de fac-simil&eacute;s de documents anciens pour les &eacute;tudes en histoire</p>
+                        <p class="edu-details" data-i18n="edu.advisor">Directeur : Prof. Benoit Favre &mdash; Subvention ERC Avanc&eacute;e ENP-China (n&deg; 788476)</p>
+                        <p class="pub-links"><a href="https://theses.fr/2022AIXM0453" target="_blank" rel="noopener" data-i18n="edu.thesislink">Lire la th&egrave;se</a></p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2019</div>
+                    <div class="edu-content">
+                        <h3 data-i18n="edu.master">Master Informatique (IA/ML)</h3>
+                        <p class="edu-org">Aix-Marseille Universit&eacute;</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2016</div>
+                    <div class="edu-content">
+                        <h3 data-i18n="edu.licence">Licence Informatique</h3>
+                        <p class="edu-org">Aix-Marseille Universit&eacute;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container contact-container">
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+            <p class="contact-text" data-i18n="contact.text">
+                N'h&eacute;sitez pas &agrave; me contacter pour discuter d'opportunit&eacute;s, de collaborations ou simplement pour &eacute;changer.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:BaptisteBlouin@proton.me" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>BaptisteBlouin@proton.me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/baptiste-blouin/" target="_blank" rel="noopener" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/BaptisteBlouin" target="_blank" rel="noopener" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://scholar.google.com/citations?user=UCP_hKIAAAAJ" target="_blank" rel="noopener" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    <span>Google Scholar</span>
+                </a>
+                <a href="https://cv.hal.science/baptiste-blouin" target="_blank" rel="noopener" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <span>HAL</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Baptiste Blouin</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
